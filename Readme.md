@@ -18,8 +18,8 @@ A simple chatbot web application built using Flask and Python. This project demo
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/flask-chatbot.git
-    cd flask-chatbot
+    git clone https://github.com/Rei0Ni/Movie-Recommender.git
+    cd Movie-Recommender
     ```
 
 2. **Install dependencies:**
@@ -29,7 +29,7 @@ A simple chatbot web application built using Flask and Python. This project demo
 
 ## Usage
 
-1. **Run the Flask app:**
+1. **Run the Movie Recommender app:**
     ```bash
     python app.py
     ```
@@ -44,7 +44,7 @@ A simple chatbot web application built using Flask and Python. This project demo
 ## Project Structure
 
 ```
-flask-chatbot/
+Movie-Recommender/
 ├── app.py
 ├── requirements.txt
 ├── templates/
@@ -54,7 +54,7 @@ flask-chatbot/
 └── README.md
 ```
 
-- `app.py`: Main Flask application.
+- `app.py`: Main Movie Recommender application.
 - `templates/index.html`: Frontend chat interface.
 - `static/style.css`: Styles for the chat UI.
 
