@@ -1,0 +1,11 @@
+# Ignore common database files
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+*.db3
+*.sql
+*.bak
+*.tar
+*.log

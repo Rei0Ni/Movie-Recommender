@@ -1,0 +1,73 @@
+#chat_box::-webkit-scrollbar {
+    width: 6px;
+}
+#chat_box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+#chat_box::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+}
+#chat_box::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa;
+}
+ /* Ensure list items don't have default bullets/padding */
+.list-none {
+    list-style: none;
+    padding-left: 0;
+}
+/* Clear floats after the floated image within the list item */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Style for the movie title link */
+.movie-title-link {
+    color: #4f46e5; /* Use an indigo color from Tailwind palette */
+    text-decoration: none; /* Remove default underline */
+    font-weight: bold; /* Match strong tag boldness */
+}
+.movie-title-link:hover {
+     text-decoration: underline; /* Add underline on hover */
+}
+
+.dark #chat_box::-webkit-scrollbar-track { /* Dark mode track */
+    background: #4a5568; /* dark:bg-gray-600 */
+}
+#chat_box::-webkit-scrollbar-thumb {
+   background: #cccccc;
+   border-radius: 10px;
+}
+.dark #chat_box::-webkit-scrollbar-thumb { /* Dark mode thumb */
+    background: #718096; /* dark:bg-gray-500 */
+}
+#chat_box::-webkit-scrollbar-thumb:hover {
+   background: #aaaaaa;
+}
+.dark #chat_box::-webkit-scrollbar-thumb:hover { /* Dark mode thumb hover */
+    background: #9fa6b2; /* dark:bg-gray-400 */
+}
+
+/* Ensure list items don't have default bullets/padding */
+.list-none {
+   list-style: none;
+   padding-left: 0;
+}
+/* Clear floats after the floated image within the list item */
+.clearfix::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Custom style for the dark mode switch thumb transition */
+.toggle-circle {
+   left: 0.2rem; /* Initial position */
+   transition: left 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Added color transition */
+}
+/* Position when checked (dark mode active) */
+input:checked + label .toggle-circle {
+    left: calc(100% - 1.4rem); /* Move to the right (width of circle - padding) */
+}
