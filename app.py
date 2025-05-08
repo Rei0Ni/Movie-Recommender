@@ -9,15 +9,10 @@ load_dotenv()
 
 app = Flask(__name__)
 
-DATA_FOLDER = "data"
-
-if not os.path.isdir(DATA_FOLDER):
-    print(f"Warning: Data directory '{DATA_FOLDER}' not found. CSV fallback may not work (if implemented).")
-
 recommender = None
 try:
     print("Initializing recommender...")
-    recommender = MovieRecommender(DATA_FOLDER)
+    recommender = MovieRecommender()
     print("Recommender initialized successfully.")
 except Exception as e:
     print(f"ERROR: Failed to initialize MovieRecommender: {e}")

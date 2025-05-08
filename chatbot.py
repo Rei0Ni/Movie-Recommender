@@ -10,7 +10,7 @@ import time
 load_dotenv()
 
 class MovieRecommender:
-    def __init__(self, data_dir_path=None):
+    def __init__(self):
         print("Initializing recommender (API mode)...")
         self.tmdb_api_key = os.getenv("TMDB_API_KEY")
 

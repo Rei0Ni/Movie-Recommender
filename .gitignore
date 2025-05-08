@@ -9,3 +9,6 @@
 *.bak
 *.tar
 *.log
+
+# Ignore Workspace Environments
+venv/
